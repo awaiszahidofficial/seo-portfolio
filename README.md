@@ -19,7 +19,7 @@ A fast, static portfolio site for Muhammad Awais. No build step and no dependenc
 1. Copy all files (including the hidden `.nojekyll`) into the root of the repository, replacing the old ones, then commit and push.
 2. On GitHub open **Settings > Pages**.
 3. Under **Build and deployment**, set Source to **Deploy from a branch**, Branch to **main**, folder **/ (root)**, then Save.
-4. After a minute the site is live at `https://awaiszahidofficial.github.io/awais-portfolio/`.
+4. After a minute the site is live at `https://awaiszahidofficial.github.io/seo-portfolio/`.
 
 If you use a custom domain or a different repository name, update the URL in `index.html` (canonical, `og:url`, JSON-LD), `robots.txt` and `sitemap.xml`.
 
@@ -41,3 +41,13 @@ Your portrait is `assets/awais.jpg`. To change it, upload a file with the same n
 ## Focus keywords
 
 The three "focus keywords" on the Rodeo Blinds, A-Z Construction and Mya Cleaning cards come from each client's own website content. Replace them with real ranking positions from Search Console when you have them. Results are plain HTML in the `#results` section.
+
+## Adding Search Console screenshots
+
+Upload an image into the `assets` folder using one of these names (extension can be .png, .jpg, .jpeg or .webp). It then appears in that client's card automatically:
+
+- `console-garage-door-4-less`
+- `console-oasis-carpet`
+- `console-rodeo-blinds`
+- `console-a-z-construction`
+- `console-mya-cleaning`

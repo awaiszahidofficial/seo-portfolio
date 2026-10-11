@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://awaiszahidofficial.github.io/awais-portfolio/sitemap.xml
+Sitemap: https://awaiszahidofficial.github.io/seo-portfolio/sitemap.xml

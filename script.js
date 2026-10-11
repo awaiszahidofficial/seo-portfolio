@@ -115,6 +115,24 @@
       .catch(function () { openEmailDraft(data); });
   });
 
+  /* ---------- Optional console screenshots ----------
+     For each card, try assets/<name>.png/.jpg/.jpeg/.webp. The block stays hidden if none exists. */
+  document.querySelectorAll('.shot[data-base]').forEach(function (box) {
+    var base = box.getAttribute('data-base');
+    var img = box.querySelector('img');
+    var exts = ['png', 'jpg', 'jpeg', 'webp'];
+    var i = 0;
+    function next() {
+      if (i >= exts.length) return;
+      var url = base + '.' + exts[i++];
+      var probe = new Image();
+      probe.onload = function () { img.src = url; box.href = url; box.hidden = false; };
+      probe.onerror = next;
+      probe.src = url;
+    }
+    next();
+  });
+
   /* ---------- Footer year ---------- */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
